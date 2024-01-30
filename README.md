@@ -30,12 +30,6 @@ Computer Style Sheets
 Creative Style Sheets
 Cascading Style Sheets
 Colorful Style Sheets
-What is the correct syntax for referring to an external script called 'script.js'?
-
-<script src='script.js'>
-<script href='script.js'>
-<script name='script.js'>
-<script file='script.js'>
 
 # Technical Details
 The project is built using HTML, CSS, and JavaScript. It dynamically updates the HTML and CSS based on user interactions.
@@ -47,7 +41,7 @@ style.css: Provides global styles for the entire project and specific styles for
 JavaScript Logic
 script.js: Implements the quiz functionality, including starting, displaying questions, checking answers, and ending the quiz.
 
-Screenshot for repository
+# Screenshot for repository
 
 ![Alt text](image.png)
 
