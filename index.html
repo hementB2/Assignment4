@@ -1,34 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>JavaScript Quiz</title>
+    <title>Timed Coding Quiz</title>
     <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <h1>JavaScript Quiz</h1>
+        <div class="scores">
+            <a id="highscores-link">View high scores</a>
+        </div>
+        <div id="timer" class="timer">
+            Time: 75
+        </div>
     </header>
-    <main>
-      <section id="quiz">
-        <div id="question-container">
-          <h2 id="question"></h2>
-          <ul id="choices"></ul>
+
+    <section id="start-container" class="start-quiz">
+        <h1>Welcome to JavaScript Quiz Challenge</h1>
+        <p>
+            You have 75 seconds to try to get the highest score by answering five
+            series of JavaScript questions. Incorrect answers will penalize your
+            time by ten seconds. Your total score will be your time after you
+            answer the last question. Click start when you are ready.
+        </p>
+        <div class="controls">
+            <button id="start-btn" class="start-btn">Start Quiz</button>
         </div>
-        <div id="result-container">
-          <p id="result"></p>
+    </section>
+
+    <section id="question-container" class="hide">
+        <h1 id="question">Question</h1>
+        <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
         </div>
-        <div id="submit-container">
-          <form id="submit-form">
-            <label for="initials">Enter your initials:</label>
-            <input type="text" id="initials" name="initials" required />
-            <button type="submit">Submit</button>
-          </form>
+        <h2 id="check-answer" class="correct-wrong hide"></h2>
+        <div class="controls">
+            <button id="next-btn" class="next-btn hide">Next</button>
         </div>
-      </section>
-    </main>
-    <script src="./script.js"></script>
-  </body>
+    </section>
+
+    <section id="score-container" class="hide">
+        <form id="submit-form">
+            <h3 id="your-score"></h3>
+            <label id="initials-label">Enter your initials to save the score:</label>
+            <input type="text" id="initials-field" maxlength="3" placeholder="Enter your initials" />
+            <button id="submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <section id="highscores" class="highscores-container hide">
+        <div id="high-scores">
+            <h1 class="centered">Leaderboard</h1>
+            <div id="highscore" class="highscore highscore-list">
+            </div>
+            <div class="controls">
+                <button id="restart-btn">Restart</button>
+                <button id="clear-btn">Clear Scores</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="script.js"></script>
+    <script src="logic.js"></script>
+</body>
+
 </html>
