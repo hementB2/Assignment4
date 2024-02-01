@@ -40,6 +40,7 @@ CSS Styles
 style.css: Provides global styles for the entire project and specific styles for the quiz.
 JavaScript Logic
 script.js: Implements the quiz functionality, including starting, displaying questions, checking answers, and ending the quiz.
+Question.js Functionality of questions and ascertenaing the wrong's & right's.
 
 # Screenshot for repository
 
@@ -47,7 +48,7 @@ script.js: Implements the quiz functionality, including starting, displaying que
 
 
 Screenshot for the Javascript quiz
+![Alt text](image-2.png)
 
 
-![Alt text](image-1.png)
 
